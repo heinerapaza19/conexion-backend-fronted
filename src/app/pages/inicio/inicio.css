@@ -1,0 +1,19 @@
+/* 🔹 Asegura que el navbar esté arriba de todo */
+nav.navbar {
+  position: relative;
+  z-index: 9999 !important;
+}
+
+/* 🔹 El carrusel debajo */
+.carousel {
+  position: relative;
+  z-index: 1 !important;
+}
+
+/* 🔹 Corrige imágenes para que no expandan la capa */
+.carousel img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  pointer-events: none; /* 👈 esto evita que bloqueen clics */
+}
